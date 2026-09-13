@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oferta Especial - Botão Zzz</title>
+    <title>Oferta Especial - Botón Zzz</title>
     <style>
         * {
             box-sizing: border-box;
@@ -12,7 +12,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.5;
             color: #333;
-            max-width: 480px; /* Otimizado para focar no formato de celular */
+            max-width: 480px;
             margin: 0 auto;
             padding: 15px;
             text-align: center;
@@ -87,9 +87,8 @@
             margin-top: 20px;
             padding: 10px;
         }
-        /* Otimização das imagens para celular */
         img {
-            max-width: 85%; /* Reduz a largura para não ocupar a tela inteira, ficando mais elegante */
+            max-width: 85%;
             height: auto;
             margin: 15px auto;
             border-radius: 8px;
@@ -97,44 +96,48 @@
             display: block;
         }
         .img-icons {
-            max-width: 95%; /* Os ícones podem ser um pouco mais largos para leitura clara */
-            box-shadow: none; /* Fica mais limpo sem sombra para ícones */
+            max-width: 95%;
+            box-shadow: none;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <span class="highlight">🛑 ESPERE! Eu sei exatamente por que você disse não...</span>
+        <span class="highlight">🛑 ¡ESPERA! Sé exactamente por qué dijiste que no...</span>
 
-        <p>Adicionar $24 extras ao seu pedido de hoje foi demais. Eu entendo perfeitamente.</p>
+        <p>Sumar $24 extra a tu pedido de hoy era demasiado. Lo entiendo perfectamente.</p>
 
         <!-- Imagem do celular com o desconto -->
-        <img src="assets/descuento.jpg" alt="30% de Desconto Extra">
+        <img src="assets/descuento.jpg" alt="30% de Descuento Extra">
 
-        <p>Mas também sei que às 3:00 da manhã, quando você não tiver força nem fôlego para fazer o som de "Shhh" com sua própria boca, vai desejar ter essa ferramenta ao seu lado.</p>
+        <p>Pero también sé que a las 3:00 AM, cuando no tengas fuerzas ni aire para hacer el sonido de "Shhh" con tu propia boca, desearás tener esta herramienta a tu lado.</p>
 
-        <p>Não quero que você fique sem o seu atalho sensorial. <b>Quero que você descanse.</b></p>
+        <p>No quiero que te quedes sin tu atajo sensorial. <b>Quiero que descanses.</b></p>
 
-        <p>Por isso, vou te fazer uma oferta final e irrepetível:</p>
+        <p>Por eso, voy a hacerte una oferta final e irrepetible:</p>
 
-        <p>Leve o Botão Zzz (com as faixas de Ruído Branco, Batimentos Uterinos e o "Shhh" Rítmico) quase a preço de custo de manutenção da plataforma.</p>
+        <p>Llévate el Botón Zzz (con las pistas de Ruido Blanco, Latidos Uterinos y el "Shhh" Rítmico) casi al costo de mantenimiento de la plataforma.</p>
 
         <div class="price-container">
-            <p class="price-normal">Preço Normal: $67</p>
+            <p class="price-normal">Precio Normal: $67</p>
             <p class="price-normal">Oferta Anterior: $24</p>
-            <p class="price-offer">👉 Última chance: Apenas $17</p>
+            <p class="price-offer">👉 Última oportunidad: Solo $17</p>
         </div>
 
         <!-- Imagem dos ícones de som -->
-        <img class="img-icons" src="assets/iconos.jpg" alt="Íconos de som para o bebê">
+        <img class="img-icons" src="assets/iconos.jpg" alt="Íconos de sonido para el bebé">
 
-        <a href="#" class="cta-button">
-            SIM, QUERO MEU ATALHO POR APENAS $17
-            <small>(Adicionar o Botão Zzz ao meu pedido)</small>
-        </a>
+        <!-- HOTMART - Sales Funnel Widget -->
+        <!--- sales funnel container --->
+        <div id="hotmart-sales-funnel"></div>
 
-        <a href="#" class="decline-link">Não, obrigado(a). Prefiro usar minha própria energia e voz nas madrugadas.</a>
+        <!--- script load and setup --->
+        <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+        <script>
+        checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+        </script>
+        <!-- HOTMART - Sales Funnel Widget -->
     </div>
 
 </body>
